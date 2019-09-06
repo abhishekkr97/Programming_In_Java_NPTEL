@@ -12,17 +12,19 @@ public class Test3{
         Scanner sc = new Scanner(System.in);
 		int n1=sc.nextInt();
 		int n2=sc.nextInt();
-QuestionScope q = new QuestionScope();
+
 //Called the method sum() to find the sum of two numbers.
-int res_sum,res_mult;
-res_sum= q.sum(n1,n2);
+
+	QuestionScope q = new QuestionScope();
+	
+    System.out.println(q.sum(n1,n2));
+
+	
 //Called the method multiply() to find the product of two numbers.
-res_mult= q.multiply(n1,n2);
 
-System.out.println(res_sum);
-System.out.print(res_mult);
-
-
+	q.multiply(n1,n2);
+    System.out.print(q.multiply(n1,n2));
+	
 
  }  
-}  
+}    
